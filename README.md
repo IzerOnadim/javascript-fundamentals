@@ -1,5 +1,7 @@
 # JavaScript Fundamentals
-Created to code along with a JavaScript course on PluralSight
+Created to code along with a JavaScript course on PluralSight.
+
+Uses Webpack starter template from https://github.com/wbkd/webpack-starter, README given below:
 
 ## Webpack Frontend Starterkit
 
