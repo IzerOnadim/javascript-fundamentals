@@ -1,4 +1,7 @@
-# Webpack Frontend Starterkit
+# JavaScript Fundamentals
+Created to code along with a JavaScript course on PluralSight
+
+## Webpack Frontend Starterkit
 
 [![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)
 
