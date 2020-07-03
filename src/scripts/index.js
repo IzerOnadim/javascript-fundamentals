@@ -29,3 +29,17 @@ let id, style;
 ({id, style} = car);
 
 console.log(id, style);
+
+//Spread syntax - inverse of rest parameter
+//Allows you to pass an iterable into several args
+//Iterables include strings and arrays
+function startCars(car1, car2, car3, ...rest) {
+    console.log(car1, car2, car3);
+    console.log(rest);
+}
+
+let carArr = [100, 200, 300, 400, 500];
+let carStr = 'abcde';
+
+startCars(...carArr);
+startCars(...carStr);
