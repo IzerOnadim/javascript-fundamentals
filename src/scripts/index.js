@@ -1,4 +1,5 @@
 import '../styles/index.scss';
+import {Car} from './models/car.js';
 
 //const must be initialised when declared
 const carID = 42;
@@ -43,3 +44,7 @@ let carStr = 'abcde';
 
 startCars(...carArr);
 startCars(...carStr);
+
+let c = new Car(12);
+console.log(c.id);
+console.log(c);
