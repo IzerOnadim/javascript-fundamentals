@@ -71,3 +71,16 @@ promise.then(
     data => console.log('success: ', data),
     error => console.log('error: ', error)
 );
+
+//POST using jquery
+let user = {
+    name: 'Izer',
+    avatar: 'izer.jpg'
+};
+
+let promisePost = $.post("", user);
+
+promisePost.then (
+    data => console.log('data: ', data),
+    error => console.log('error: ', error)
+);
