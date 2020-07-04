@@ -84,3 +84,29 @@ promisePost.then (
     data => console.log('data: ', data),
     error => console.log('error: ', error)
 );
+
+/*------forms-----------*/
+
+let form = document.getElementById("user-form");
+
+form.addEventListener("submit", event => {
+    let user = form.elements['user'];
+    let userError = document.getElementById('user-error');
+    let avatar = form.elements['avatar-file'];
+    let avatarError = document.getElementById('avatar-error');
+
+    console.log(user.value, avatar.value);
+
+    if (user.value.length <= 0) {
+        userError.textContent = "Cannot be left empty";
+        userError.style.color = "red";
+        user.style.borderColor = "red";
+        event.preventDefault();
+    }
+    if (avatar.value.length <= 0) {
+        avatarError.textContent = "Cannot be left empty";
+        avatarError.style.color = "red";
+        avatar.style.borderColor = "red";
+        event.preventDefault();
+    }
+});
