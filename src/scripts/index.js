@@ -1,5 +1,6 @@
 import '../styles/index.scss';
 import {Car} from './models/car.js';
+import $ from 'jquery';
 
 //const must be initialised when declared
 const carID = 42;
@@ -48,3 +49,25 @@ startCars(...carStr);
 let c = new Car(12);
 console.log(c.id);
 console.log(c);
+
+/*------------Data Access Using HTTP--------------*/
+
+//Using XHR
+let xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText);
+    }
+};
+
+xhttp.open('GET', '', true);
+xhttp.send();
+
+//Using jquery
+let promise = $.get('');
+
+promise.then(
+    data => console.log('success: ', data),
+    error => console.log('error: ', error)
+);
